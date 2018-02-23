@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://polynomia.github.io/dns_proxy/</loc>
+    
+    <lastmod>2018-02-23T09:35:16.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://polynomia.github.io/tags/index.html</loc>
     
     <lastmod>2018-02-13T11:24:17.000Z</lastmod>
@@ -19,13 +26,6 @@
     <loc>http://polynomia.github.io/categories/index.html</loc>
     
     <lastmod>2018-02-13T08:45:58.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://polynomia.github.io/hello-world/</loc>
-    
-    <lastmod>2018-02-13T07:12:34.000Z</lastmod>
     
   </url>
   

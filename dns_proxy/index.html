@@ -102,20 +102,21 @@
 
 
   
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="GFW," />
 
 
-<meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="description" content="Intro放假回家之后，感觉家里的网络状况实在令人堪忧。好在我还是可以科学上网，直到前几天突然连不上了github，which means 无法用 ssh 连上 github。无法用git push连接远程仓库，也无法ping通github。使用nslookup命令查询github.com地址，得到的是错误的地址。因此怀疑是 DNS 污染的问题。 不过急着想 push 上去，为了连上远程仓库，找到">
+<meta name="keywords" content="GFW">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://yoursite.com/hello-world/index.html">
+<meta property="og:title" content="MacOS 下使用 DNSmasq 和 DNScrypt 防止污染">
+<meta property="og:url" content="http://yoursite.com/dns_proxy/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="Intro放假回家之后，感觉家里的网络状况实在令人堪忧。好在我还是可以科学上网，直到前几天突然连不上了github，which means 无法用 ssh 连上 github。无法用git push连接远程仓库，也无法ping通github。使用nslookup命令查询github.com地址，得到的是错误的地址。因此怀疑是 DNS 污染的问题。 不过急着想 push 上去，为了连上远程仓库，找到">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2018-02-13T07:12:34.000Z">
+<meta property="og:updated_time" content="2018-02-23T09:35:16.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="twitter:title" content="MacOS 下使用 DNSmasq 和 DNScrypt 防止污染">
+<meta name="twitter:description" content="Intro放假回家之后，感觉家里的网络状况实在令人堪忧。好在我还是可以科学上网，直到前几天突然连不上了github，which means 无法用 ssh 连上 github。无法用git push连接远程仓库，也无法ping通github。使用nslookup命令查询github.com地址，得到的是错误的地址。因此怀疑是 DNS 污染的问题。 不过急着想 push 上去，为了连上远程仓库，找到">
 
 
 
@@ -124,7 +125,7 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/hello-world/"/>
+  <link rel="canonical" href="http://yoursite.com/dns_proxy/"/>
 
 
 
@@ -133,7 +134,7 @@
     sidebar: "",
   };
 </script>
-  <title>Hello World | Hexo</title>
+  <title>MacOS 下使用 DNSmasq 和 DNScrypt 防止污染 | Hexo</title>
   
 
 
@@ -326,7 +327,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/hello-world/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/dns_proxy/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="polynomia">
@@ -343,7 +344,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">Hello World</h2>
+          <h2 class="post-title" itemprop="name headline">MacOS 下使用 DNSmasq 和 DNScrypt 防止污染</h2>
         
 
         <div class="post-meta">
@@ -355,7 +356,7 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-02-13T15:12:34+08:00">2018-02-13</time>
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-02-23T16:09:29+08:00">2018-02-23</time>
             
 
             
@@ -365,6 +366,24 @@
           </span>
 
           
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/日常折腾/" itemprop="url" rel="index"><span itemprop="name">日常折腾</span></a></span>
+
+                
+                
+              
+            </span>
+          
 
           
             
@@ -373,9 +392,9 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/hello-world/#comments" itemprop="discussionUrl">
+                <a href="/dns_proxy/#comments" itemprop="discussionUrl">
                   <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="hello-world/" itemprop="commentCount"></span>
+                        data-disqus-identifier="dns_proxy/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -387,9 +406,9 @@
           
             <span class="post-letters-count">
               &nbsp; | &nbsp;
-              <span>78 word</span>
+              <span>1,924 word</span>
               &nbsp; | &nbsp;
-              <span>1 min</span>
+              <span>8 min</span>
             </span>
           
 
@@ -420,15 +439,78 @@
       
 
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+        <h1 id="Intro"><a href="#Intro" class="headerlink" title="Intro"></a>Intro</h1><p>放假回家之后，感觉家里的网络状况实在令人堪忧。好在我还是可以科学上网，直到前几天突然连不上了github，which means 无法用 ssh 连上 github。无法用<code>git push</code>连接远程仓库，也无法<code>ping</code>通github。使用<code>nslookup</code>命令查询github.com地址，得到的是错误的地址。因此怀疑是 DNS 污染的问题。</p>
+<p>不过急着想 push 上去，为了连上远程仓库，找到了两个解决方法：</p>
+<ul>
+<li><p>使用<code>https</code>连接远程仓库：</p>
+  <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span> 首先移除ssh连接的远程仓库</span><br><span class="line">git remote remove origin</span><br><span class="line"><span class="meta">#</span> 再连上https</span><br><span class="line">git remote add origin https://github.com/&lt;user_name&gt;/&lt;repo_name&gt;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>ssh via proxy<br>  使用 ssh 自带的<code>Proxycommand</code>就可以使用<code>http</code>代理连接 ssh<br>  首先使用<code>homebrew</code>安装<code>corkscrew</code></p>
+  <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install corkscrew</span><br></pre></td></tr></table></figure>
+<p>  然后配置 ssh</p>
+  <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim ~/.ssh/config</span><br></pre></td></tr></table></figure>
+<p>  在配置中写入</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Host *</span><br><span class="line">    ProxyCommand corkscrew 127.0.0.1 1079 %h %p</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<pre><code>后面的代理地址和端口根据自己情况修改即可。
+</code></pre><h1 id="防止DNS污染"><a href="#防止DNS污染" class="headerlink" title="防止DNS污染"></a>防止DNS污染</h1><p>接着就进入正文了，如何防止 DNS 污染。本来我对这些是没有’洁癖’的，我的科学上网需求也仅仅是 Google 和 Youtube 。然而这次 ISP 做得实在过分。于是下定决心清理一下。</p>
+<h2 id="DNSmasq"><a href="#DNSmasq" class="headerlink" title="DNSmasq"></a>DNSmasq</h2><p><code>DNSmasq</code>是一个小巧且方便地用于配置 DNS 和 DHCP 的工具，适用于小型网络，它提供了 DNS 功能和可选择的 DHCP 功能。使用它主要是为了让国内的网址使用国内的 DNS 解析，这样会使速度快很多。目前还不需要它的 DHCP 功能，不过默认也是关闭的，不需要担心。</p>
+<h3 id="安装和配置"><a href="#安装和配置" class="headerlink" title="安装和配置"></a>安装和配置</h3><p>在 mac 下的安装很方便</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install dnsmasq</span><br></pre></td></tr></table></figure>
+<p>接着修改配置文件，其实只要打开几个注释，设定一下监听端口即可：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 不读取有关解析的配置文件，默认使用/etc/revolve.conf中的上游服务器地址进行解析</span></span><br><span class="line"><span class="comment"># 这里我们把地址直接写在配置文件里，所以不需要这个了</span></span><br><span class="line">no-resolv</span><br><span class="line"><span class="comment"># 不检查有关解析的配置文件更新（原因同上）</span></span><br><span class="line">no-poll</span><br><span class="line"><span class="comment"># 配置文件路径，加载dnsmasq-china-list的那两个配置文件</span></span><br><span class="line">conf-dir=/usr/<span class="built_in">local</span>/etc/dnsmasq.d</span><br><span class="line"><span class="comment"># 附加Hosts文件，可有可无，我觉得以后可能还是需要用到Hosts，就加入了这一行</span></span><br><span class="line">addn-hosts=/usr/<span class="built_in">local</span>/etc/dnsmasq.hosts</span><br><span class="line"><span class="comment"># 上游服务器设置成DNSCrypt</span></span><br><span class="line">server=127.0.0.1<span class="comment">#5353</span></span><br><span class="line"><span class="comment"># 缓存大小，默认是150，调大点应该没坏处</span></span><br><span class="line">cache-size=1500</span><br></pre></td></tr></table></figure>
+<p><code>dnsmasq-china-list</code>的配置文件在<a href="https://github.com/felixonmars/dnsmasq-china-list" target="_blank" rel="noopener">这个项目</a>里，它维护了一份中国地区大部分网站的地址。这个列表来可以帮助DNSMasq判断应该把DNS请求发向哪里。</p>
+<p>可以直接运行这个命令来下载到配置文件夹：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget -4 --no-check-certificate -O /usr/local/etc/dnsmasq.d/accelerated-domains.china.conf https://raw.githubusercontent.com/felixonmars/dnsmasq-china-list/master/accelerated-domains.china.conf</span><br></pre></td></tr></table></figure>
+<p>这样，DNSmasq 就配置完成了。</p>
+<h2 id="DNScrypt"><a href="#DNScrypt" class="headerlink" title="DNScrypt"></a>DNScrypt</h2><p><code>DNScrypt</code>是 OpenDNS 出品的一个可以加密 DNS 请求的工具，让你的 DNS 请求能够像使用 ssl 一样加密地请求服务器，这样便从根本上杜绝了 DNS 污染问题。</p>
+<h2 id="安装和配置-1"><a href="#安装和配置-1" class="headerlink" title="安装和配置"></a>安装和配置</h2><p>同样使用 homebrew安装：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install dnscrypt-proxy</span><br></pre></td></tr></table></figure>
+<p>然后修改配置文件：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim /usr/<span class="built_in">local</span>/etc/dnscrypt-proxy.conf</span><br></pre></td></tr></table></figure>
+<p>这个配置文件改起来很简单，首先（跃入眼帘的是），<code>ProviderName</code>这一项。</p>
+<p>OpenDNS 已经为我们准备好了公共 DNS，我们可以选择一个<code>ping</code>值比较小的，提供的 DNS 列表在：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> /usr/<span class="built_in">local</span>/opt/dnscrypt-proxy/share/dnscrypt-proxy</span><br></pre></td></tr></table></figure>
+<p>然后打开<code>dnscrypt-resolvers.csv</code>，选择一个 DNS server 然后将第一列的名字属性填到配置文件处即可。</p>
+<p>接着需要修改的就是配置文件中的 <code>LocalAddress</code>，根据在 <code>DNSmasq</code> 中配置的 server端口，改成相同的即可。比如在这个例子中，应该改为：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">LocalAddress 127.0.0.1:5353</span><br></pre></td></tr></table></figure>
+<p>另外，你或许需要将这一行修改为 <code>yes</code>：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Daemonize yes</span><br></pre></td></tr></table></figure>
+<h2 id="运行-DNSmasq-和-DNScrypt"><a href="#运行-DNSmasq-和-DNScrypt" class="headerlink" title="运行 DNSmasq 和 DNScrypt"></a>运行 DNSmasq 和 DNScrypt</h2><p>配置结束之后就可以愉快地使用了。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo brew services start dnscrypt-proxy</span><br><span class="line">sudo brew services start dnsmasq</span><br></pre></td></tr></table></figure>
+<p>记得一定要加上<code>sudo</code>！之前改配置之后没有加<code>sudo</code>就 start stop 出现了各种配置没用的情况。</p>
+<p>还有最后一步就完成了：</p>
+<p>在网络的高级选项中将系统的 DNS 地址改成 <code>127.0.0.1</code>。当然，你也可以使用命令行直接设置：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo networksetup -setdnsservers &quot;Wi-Fi&quot; 127.0.0.1</span><br></pre></td></tr></table></figure>
+<p>如果你不放心，可以先看一下DNSmasq 和 DNScrypt有没有在工作：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 查看 dnsmasq</span></span><br><span class="line">sudo lsof -Pni UDP:53</span><br><span class="line"><span class="comment"># 查看 dnscrypt</span></span><br><span class="line">sudo lsof -Pni UDP:5353</span><br></pre></td></tr></table></figure>
+<h1 id="自建-DNS-服务器"><a href="#自建-DNS-服务器" class="headerlink" title="自建 DNS 服务器"></a>自建 DNS 服务器</h1><p>不知道为什么，我在本地搭建好环境，使用远程DNS之后，还是会出现被污染的情况。我猜测可能是因为 OpenDNS 的目标太大了，提供的 DNS 服务器或许会成为 GFW 的目标。当然也有一个可能，是我当时没用 <code>sudo</code> 运行导致了一些奇怪的问题。不过当时实在烦躁的不行，因此直接在 VPS 上自建了一个。</p>
+<h2 id="DNScrypt-wrapper-——-DNScrypt的服务端"><a href="#DNScrypt-wrapper-——-DNScrypt的服务端" class="headerlink" title="DNScrypt-wrapper —— DNScrypt的服务端"></a>DNScrypt-wrapper —— DNScrypt的服务端</h2><p>虽然 dnscrypt-proxy 是官方开源的,但是 server 端并没有开源出来，好在有大神 <a href="https://yechengfu.com/" target="_blank" rel="noopener">Cofyc</a> 参照 client 写了一个开源的版的 server , <a href="https://github.com/Cofyc/dnscrypt-wrapper" target="_blank" rel="noopener">dnscrypt-wrapper</a>。</p>
+<p>所以我们只需要把它部署在 VPS 上，然后本地的 DNScrypt 配置文件改成连到自己的 VPS 上即可。</p>
+<h3 id="DNScrypt-wrapper-的安装"><a href="#DNScrypt-wrapper-的安装" class="headerlink" title="DNScrypt-wrapper 的安装"></a>DNScrypt-wrapper 的安装</h3><p>这个安装和之前比起来要麻烦一些，因为它需要依赖 <code>libsodium</code> 和 <code>libevent2</code>。我的 VPS 的环境是 Ubuntu16.04。以下是我安装的一些包：（其实按照报错来按需安装即可）</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">apt-get update &amp;&amp; apt-get upgrade</span><br><span class="line">apt-get install libevent-dev</span><br><span class="line">apt-get install build-essential</span><br><span class="line">sudo apt-get install autoconf</span><br><span class="line">apt-get install libsodium*</span><br></pre></td></tr></table></figure>
+<p>安装 <code>DNScrypt-wrapper</code>:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> --recursive git://github.com/Cofyc/dnscrypt-wrapper.git</span><br><span class="line"><span class="built_in">cd</span> dnscrypt-wrapper</span><br><span class="line">make configure</span><br><span class="line">./configure</span><br><span class="line">make</span><br><span class="line">make install</span><br><span class="line"></span><br><span class="line"><span class="comment"># 安装完成会出现如下提示：</span></span><br><span class="line">install -d -m 755 ‘/usr/<span class="built_in">local</span>/bin’</span><br><span class="line">install -p dnscrypt-wrapper ‘/usr/<span class="built_in">local</span>/bin’</span><br></pre></td></tr></table></figure>
+<h3 id="DNScrypt-wrapper-的使用"><a href="#DNScrypt-wrapper-的使用" class="headerlink" title="DNScrypt-wrapper 的使用"></a>DNScrypt-wrapper 的使用</h3><p>新建一个文件夹用于保存证书和密钥对，同时还需要产生一个临时的密钥来运行。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> ~</span><br><span class="line">mkdir dnskey</span><br><span class="line"><span class="comment"># 新建一个目录来存放证书</span></span><br><span class="line"><span class="built_in">cd</span> dnskey</span><br><span class="line">dnscrypt-wrapper --gen-provider-keypair \</span><br><span class="line">  --provider-name=2.dnscrypt-cert.&lt;yourdomain&gt; --ext-address=&lt;external server ip&gt; </span><br><span class="line"><span class="comment"># 生成提供商密钥对</span></span><br></pre></td></tr></table></figure>
+<p><code>&lt;yourdomain&gt;</code> 就是可以随意取了，比如 2.dnscrypt-cert.ex.com，然后 <code>&lt;external server ip&gt;</code> 填 VPS 的 IP 地址。</p>
+<p>接着就会产生一个指纹信息，这个信息就是客户端配置时候需要的 <code>provider_public_key</code></p>
+<p>然后，我们使用命令生成有时限的加密密钥对以及生成预签名证书：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">dnscrypt-wrapper --gen-crypt-keypair --crypt-secretkey-file=1.key</span><br><span class="line">dnscrypt-wrapper --gen-cert-file --crypt-secretkey-file=1.key --provider-cert-file=1.cert</span><br></pre></td></tr></table></figure>
+<p>使用命令来运行 dnscrypt-wrapper，用“-VV”来显示比较详细的 debug 信息：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">dnscrypt-wrapper --resolver-address=8.8.8.8:53 --listen-address=&lt;external server ip&gt; \</span><br><span class="line">                   --provider-name=2.dnscrypt-cert.ex.com \</span><br><span class="line">                   --crypt-secretkey-file=1.key --provider-cert-file=1.cert</span><br></pre></td></tr></table></figure>
+<p>我在这里选择是 Google 的 公共 DNS，你可以使用其它的。使用 <code>-d</code> 即可在后台运行。</p>
+<h3 id="修改本地-DNScrypt-的配置"><a href="#修改本地-DNScrypt-的配置" class="headerlink" title="修改本地 DNScrypt 的配置"></a>修改本地 DNScrypt 的配置</h3><p>打开配置文件，然后将 <code>ResolverName</code> 一栏注释掉，在配置文件中加入:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ProviderName    2.dnscrypt-cert.ex.com</span><br><span class="line">ProviderKey     &lt;your_key&gt;</span><br><span class="line">ResolverAddress &lt;your_add&gt;</span><br></pre></td></tr></table></figure>
+<p>修改完之后重启 DNScrypt 即可。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo brew services restart dnscrypt-proxy</span><br></pre></td></tr></table></figure>
+<h1 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h1><ul>
+<li><a href="https://zerotoroot.me/dns-security-post/" target="_blank" rel="noopener">Ultimate DNS Setup: How to Reduce, Secure &amp; Encrypt DNS Traffic</a></li>
+<li><a href="https://skyline75489.github.io/post/2014-8-1_my-china-dns.html" target="_blank" rel="noopener">我(以前)的DNS解决方案</a></li>
+<li><a href="https://www.logcg.com/archives/981.html" target="_blank" rel="noopener">编译安装 dnscrypt-wrapper 搭建防污染 DNS 服务器</a></li>
+<li><a href="https://herowong.me/archives/build-dnscrypt-private-server.html" target="_blank" rel="noopener">搭建DNSCrypt服务器</a></li>
+</ul>
 
       
     </div>
@@ -446,6 +528,12 @@
     
 
     <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/GFW/" rel="tag"># GFW</a>
+          
+        </div>
       
 
       
@@ -543,7 +631,33 @@
               
 
               
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    
+                    
+                      
+                    
+                    <span class="site-state-item-count">1</span>
+                    <span class="site-state-item-name">categories</span>
+                  </a>
+                </div>
+              
 
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    
+                    
+                      
+                    
+                    <span class="site-state-item-count">1</span>
+                    <span class="site-state-item-name">tags</span>
+                  </a>
+                </div>
               
             </nav>
           
@@ -589,7 +703,7 @@
                   
                   
                     <li>
-                      <a href="/hello-world/" title="Hello World" target="_blank">Hello World</a>
+                      <a href="/dns_proxy/" title="MacOS 下使用 DNSmasq 和 DNScrypt 防止污染" target="_blank">MacOS 下使用 DNSmasq 和 DNScrypt 防止污染</a>
                     </li>
                   
                 </ul>
@@ -614,7 +728,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-number">1.</span> <span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-number">1.1.</span> <span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-number">1.2.</span> <span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-number">1.3.</span> <span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-number">1.4.</span> <span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Intro"><span class="nav-number">1.</span> <span class="nav-text">Intro</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#防止DNS污染"><span class="nav-number">2.</span> <span class="nav-text">防止DNS污染</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#DNSmasq"><span class="nav-number">2.1.</span> <span class="nav-text">DNSmasq</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装和配置"><span class="nav-number">2.1.1.</span> <span class="nav-text">安装和配置</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#DNScrypt"><span class="nav-number">2.2.</span> <span class="nav-text">DNScrypt</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装和配置-1"><span class="nav-number">2.3.</span> <span class="nav-text">安装和配置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#运行-DNSmasq-和-DNScrypt"><span class="nav-number">2.4.</span> <span class="nav-text">运行 DNSmasq 和 DNScrypt</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#自建-DNS-服务器"><span class="nav-number">3.</span> <span class="nav-text">自建 DNS 服务器</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#DNScrypt-wrapper-——-DNScrypt的服务端"><span class="nav-number">3.1.</span> <span class="nav-text">DNScrypt-wrapper —— DNScrypt的服务端</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#DNScrypt-wrapper-的安装"><span class="nav-number">3.1.1.</span> <span class="nav-text">DNScrypt-wrapper 的安装</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#DNScrypt-wrapper-的使用"><span class="nav-number">3.1.2.</span> <span class="nav-text">DNScrypt-wrapper 的使用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#修改本地-DNScrypt-的配置"><span class="nav-number">3.1.3.</span> <span class="nav-text">修改本地 DNScrypt 的配置</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#参考链接"><span class="nav-number">4.</span> <span class="nav-text">参考链接</span></a></li></ol></div>
             
 
           </div>
@@ -787,9 +901,9 @@
   
     <script type="text/javascript">
       var disqus_config = function () {
-        this.page.url = 'http://yoursite.com/hello-world/';
-        this.page.identifier = 'hello-world/';
-        this.page.title = 'Hello World';
+        this.page.url = 'http://yoursite.com/dns_proxy/';
+        this.page.identifier = 'dns_proxy/';
+        this.page.title = 'MacOS 下使用 DNSmasq 和 DNScrypt 防止污染';
       };
       function loadComments () {
         var d = document, s = d.createElement('script');

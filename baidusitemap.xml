@@ -3,21 +3,26 @@
 
 
     
-    
-    
-    
   <url>
-    <loc>http://yoursite.com/hello-world/</loc>
-    <lastmod>2018-02-13T07:12:34.000Z</lastmod>
+    <loc>http://yoursite.com/dns_proxy/</loc>
+    <lastmod>2018-02-23T09:35:16.000Z</lastmod>
     <data>
         <display>
-        <title>Hello World</title>
-        <pubTime>2018-02-13T07:12:34.000Z</pubTime>
+        <title>MacOS 下使用 DNSmasq 和 DNScrypt 防止污染</title>
+        <pubTime>2018-02-23T08:09:29.000Z</pubTime>
         
+        <tag>GFW</tag>
+         
          
            
+             
+              <breadCrumb title="日常折腾" url="http://yoursite.com/categories/%E6%97%A5%E5%B8%B8%E6%8A%98%E8%85%BE/"/>
+          
         </display>
     </data>
     </url>
 
+    
+    
+    
 </urlset>
