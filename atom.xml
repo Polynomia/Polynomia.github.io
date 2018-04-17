@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-04-17T13:50:24.000Z</updated>
+  <updated>2018-04-17T13:58:29.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Visual Question Answering - A Survey of Methods and Datasets</title>
+    <link href="http://yoursite.com/VQAsurvey/"/>
+    <id>http://yoursite.com/VQAsurvey/</id>
+    <published>2018-04-17T13:54:11.000Z</published>
+    <updated>2018-04-17T13:58:29.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Notes-for-“Visual-Question-Answering-A-Survey-of-Methods-and-Datasets”"><a href="#Notes-for-“Visual-Question-Answering-A-Survey-of-Methods-and-Datasets”" class="headerlink" title="Notes for “Visual Question Answering: A Survey of Methods and Datasets”"></a>Notes for “Visual Question Answering: A Survey of Methods and Datasets”</h2><div class="table-container"><table><thead><tr><th style="text-align:center">Method</th><th style="text-align:center">pros</th><th style="text-align:center">cons</th></tr></thead><tbody><tr><td style="text-align:center">Joint embedding approaches</td><td style="text-align:center">straightforward in their principle and constitute the base of most current approaches to VQA</td><td style="text-align:center">too basic and can be improved with the addition of other tech</td></tr><tr><td style="text-align:center">Attention mechanisms</td><td style="text-align:center">address this issue by using local image features and translates readily to the task of VQA for focusing on image regions relevant to the question</td><td style="text-align:center">closer inspection by question type show little or no beneﬁt on binary (yes/no) questions</td></tr><tr><td style="text-align:center">Compositional Models</td><td style="text-align:center">a better use of supervision and facilitates transfer learning</td><td style="text-align:center">For NMN, the assembly of modules uses aggressive simpliﬁcation of the questions that discards some grammatical cues. For DMN, a potential criticism for applying a same model to text and images stems from the intrinsically diﬀerent nature of sequences of words, and sequences of image patches.</td></tr><tr><td style="text-align:center">Models using external knowledge bases</td><td style="text-align:center">it shows an advantage in using the external KB in terms of average accuracy</td><td style="text-align:center">It’s hard to find a proper way to linking knowledge database and M=most existing VQA datasets include a majority of questions that require little amount of prior knowledge, and performance on these datasets thus poorly reﬂect the particular capabilities of these methods</td></tr></tbody></table></div><div class="table-container"><table><thead><tr><th style="text-align:center">Database</th><th style="text-align:center">Features</th></tr></thead><tbody><tr><td style="text-align:center">DAQUAR</td><td style="text-align:center">795 training and 654 test images, two types of question/answer pairs are collected: synthetic and human annotators. <strong>The main disadvantage of DAQUAR is the restriction of answers to a predeﬁned set of 16 colors and 894 object categories. The dataset also presents strong biases showing that humans tend to focus on a few prominent objects, such as tables and chairs</strong></td></tr><tr><td style="text-align:center">COCO-QA</td><td style="text-align:center">the anwers are synthetic, four types based on the type of expected answer: object, number, color, and location, <strong>A side-eﬀect of the automatic conversion of captions is a high repetition rate of the questions. Among the 38,948 questions of the test set, 9,072 (23.29%) of them also appear as training questions.</strong></td></tr><tr><td style="text-align:center">FM-IQA</td><td style="text-align:center">the questions/answers are provided here by humans, answering the questions typically requires both understanding the visual contents of the image and incorporating prior “common sense” information</td></tr><tr><td style="text-align:center">VQA-real</td><td style="text-align:center">it contains 614,163 questions, each having 10 answers from 10 diﬀerent annotators, little more than purely visual information is required to answer most questions, 5.5% of the questions were estimated to require adult-level knowledge</td></tr><tr><td style="text-align:center">Visual Genome</td><td style="text-align:center">the largest available dataset for VQA, with 1.7 million question/answer pairs, <strong>as shown by the top-1000 most frequent answers only covering about 64% of the correct answers</strong></td></tr><tr><td style="text-align:center">Visual7w</td><td style="text-align:center">a subset of the Visual Genome that contains additional annotations, each question being provided with 4 candidate answers, of which only one is correct, all the objects mentioned in the questions are visually grounded</td></tr><tr><td style="text-align:center">Visual Madlibs</td><td style="text-align:center">The objective is to determine words to complete an afﬁrmation that describes a given image, the dataset comprises 10,738 images from COCO [45] and 360,001 focused natural language descriptions</td></tr></tbody></table></div>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;Notes-for-“Visual-Question-Answering-A-Survey-of-Methods-and-Datasets”&quot;&gt;&lt;a href=&quot;#Notes-for-“Visual-Question-Answering-A-Survey-of-M
+      
+    
+    </summary>
+    
+      <category term="Study in Lab" scheme="http://yoursite.com/categories/Study-in-Lab/"/>
+    
+    
+      <category term="paper reading" scheme="http://yoursite.com/tags/paper-reading/"/>
+    
+      <category term="visual question answering" scheme="http://yoursite.com/tags/visual-question-answering/"/>
+    
+  </entry>
   
   <entry>
     <title>QUASAR</title>
